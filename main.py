@@ -7,7 +7,7 @@ import os
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-unattendxml.create_answerfile(config)
+autoxml.create_answerfile(config)
 
 isofile = config['MISC']['PATH_TO_ISO']
 if isofile:
